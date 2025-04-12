@@ -8,11 +8,17 @@
 <title> technova </title>
 <style>
   body {
-     font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 15px;
-        line-height: 1.5;
-        word-wrap: break-word;
+      font-family: Arial, sans-serif;
+    line-height: 1.5;
+    max-width: 1000px; /* Límite de ancho en desktop */
+    margin: 0 auto; /* Centrado */
+    padding: 15px;
+}
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
 background-image: url("img/abstract-white-background-free-vector.jpg");
 background-position: center center;
 background-repeat: no-repeat;
@@ -35,6 +41,17 @@ header h1{
     margin: 0;
     font-size: 2.5em;
 
+}
+  nav {
+    display: flex;
+    flex-wrap: wrap; /* Para que los ítems se ajusten en móviles */
+    gap: 10px;
+    justify-content: center;
+}
+nav a {
+    padding: 8px 15px;
+    background: #f0f0f0;
+    text-decoration: none;
 }
    nav ul {
     list-style: none;
